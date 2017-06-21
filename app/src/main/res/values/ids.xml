@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cameraPreview" type="id">0x7f0c004f</item>
+    <item name="ScanButton" type="id">0x7f0c0050</item>
+    <item name="scannerButton" type="id">0x7f0c004d</item>
+</resources>
