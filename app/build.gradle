@@ -37,5 +37,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
     compile 'me.dm7.barcodescanner:zbar:1.8.2'
+    compile 'me.dm7.barcodescanner:zxing:1.9'
     testCompile 'junit:junit:4.12'
 }

@@ -36,11 +36,7 @@ public class Tab1Shear extends Fragment{//class
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab1shear, container, false);
-
-
-
         return rootView;
-
     }
 
 
@@ -148,7 +144,7 @@ public class Tab1Shear extends Fragment{//class
 
                         Result="";
                         SP="";
-                        et1.setText("");
+                       clear();
                     }
                 })
 
@@ -195,7 +191,7 @@ public class Tab1Shear extends Fragment{//class
                     public void onClick(DialogInterface dialog, int which) {
                         Result="";
                         SP="";
-                        et1.setText("");
+                       clear();
                     }
                 }).show();
 
@@ -210,6 +206,7 @@ public class Tab1Shear extends Fragment{//class
                     public void onClick(DialogInterface dialog, int which) {
                         ViewPager mViewPager = (ViewPager) getActivity().findViewById(R.id.container);
                         mViewPager.setCurrentItem(2);
+                       clear();
 
                     }
                 })
@@ -218,11 +215,15 @@ public class Tab1Shear extends Fragment{//class
 
                         Result = "";
                         SP = "";
-                        et1.setText("");
+                        clear();
                     }
                 }).show();
 
 
     }
 
+
+    public void clear(){
+        et1.setText("");
+    }
 }//class

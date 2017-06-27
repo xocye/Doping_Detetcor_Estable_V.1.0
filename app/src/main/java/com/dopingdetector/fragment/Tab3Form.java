@@ -65,15 +65,16 @@ public class Tab3Form extends Fragment{
             String emailBody = Mensaje;
             new SendMailTask(this.getActivity()).execute(fromEmail,
                     fromPassword, toEmailList, emailSubject, emailBody);
-            Toast.makeText(getActivity(),"Mensaje Enviado",
-                    Toast.LENGTH_SHORT).show();
-            e1.setText("");
-            e2.setText("");
-            e3.setText("");
+            clear();
         }
 
 
 
     }
 
-}
+    public void clear(){
+        e1.setText("");
+        e2.setText("");
+        e3.setText("");
+    }
+}//class
